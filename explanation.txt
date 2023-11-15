@@ -1,0 +1,10 @@
+I tried to initially use scapy to try to sort the packets by http packets and then to scrape info from the packets. 
+Then, I realized we need to make a proxy instead. I spent way too long messing around with different http proxy 
+implementations, such as just using socket module as we would for a simple server and client script. My sad attempts
+can be seen as first_attempt.py and second_attempt.py in this folder. Eventually, I saw an example online about using 
+http.server which then got me to make a very simple proxy. I kept getting into weird errors regarding http.server trying
+to process "favicon.ico" which I eventually gave up on and just ignored this issue.
+For the simple http proxy I added a GET and a POST function. Unfortunately, I did not get to get to active mode at all.
+My implementations for passive is pretty janky too. I ran out of time so I just added what I assumed would scrape for 
+potentially sensitive information on the POST function where I would add them to the info1.txt. I didn't even have time
+to properly test my POST function. I also quickly made a super basic login html file.
